@@ -12,7 +12,7 @@ func NewYiDianDianFactory() *YiDianDianFactory {
 	return &YiDianDianFactory{}
 }
 
-func (y *YiDianDianFactory) ProduceMilkTea() MilkTea {
+func (*YiDianDianFactory) ProduceMilkTea() MilkTea {
 	return &YiDianDianMilkTea{}
 }
 
@@ -23,6 +23,6 @@ func NewCoCoFactory() *CoCoFactory {
 	return &CoCoFactory{}
 }
 
-func (c *CoCoFactory) ProduceMilkTea() MilkTea {
+func (*CoCoFactory) ProduceMilkTea() MilkTea {
 	return &CoCoMilkTea{}
 }

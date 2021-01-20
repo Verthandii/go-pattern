@@ -1,7 +1,7 @@
 package main
 
-// MilkTeaFactory 奶茶的抽象工厂
-type MilkTeaFactory interface {
+// MilkTeaShopFactory 奶茶店产品族的抽象工厂
+type MilkTeaShopFactory interface {
 	ProduceMilkTea() MilkTea
 	ProduceIceCream() IceCream
 }

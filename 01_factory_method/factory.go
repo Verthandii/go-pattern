@@ -2,8 +2,7 @@ package main
 
 // MilkTeaFactory 奶茶的抽象工厂
 type MilkTeaFactory interface {
-	// Produce 这个方法就是 工厂方法
-	Produce() MilkTea
+	ProduceMilkTea() MilkTea
 }
 
 // YiDianDianFactory 一点点奶茶店
@@ -13,8 +12,8 @@ func NewYiDianDianFactory() *YiDianDianFactory {
 	return &YiDianDianFactory{}
 }
 
-func (y *YiDianDianFactory) Produce() MilkTea {
-	return &DiamondMilkTea{}
+func (y *YiDianDianFactory) ProduceMilkTea() MilkTea {
+	return &YiDianDianMilkTea{}
 }
 
 // CoCoFactory CoCo奶茶店
@@ -24,6 +23,6 @@ func NewCoCoFactory() *CoCoFactory {
 	return &CoCoFactory{}
 }
 
-func (c *CoCoFactory) Produce() MilkTea {
-	return &PuddingMilkTea{}
+func (c *CoCoFactory) ProduceMilkTea() MilkTea {
+	return &CoCoMilkTea{}
 }

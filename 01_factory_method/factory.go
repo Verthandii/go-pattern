@@ -5,24 +5,24 @@ type MilkTeaFactory interface {
 	Produce() MilkTea
 }
 
-// YiDianDianFactory 一点点奶茶店
-type YiDianDianFactory struct{}
+// DiamondMilkTeaFactory 珍珠奶茶工厂
+type DiamondMilkTeaFactory struct{}
 
-func NewYiDianDianFactory() *YiDianDianFactory {
-	return &YiDianDianFactory{}
+func NewDiamondMilkTeaFactory() *DiamondMilkTeaFactory {
+	return &DiamondMilkTeaFactory{}
 }
 
-func (*YiDianDianFactory) Produce() MilkTea {
-	return &YiDianDianMilkTea{}
+func (*DiamondMilkTeaFactory) Produce() MilkTea {
+	return &DiamondMilkTea{}
 }
 
-// CoCoFactory CoCo奶茶店
-type CoCoFactory struct{}
+// PuddingMilkTeaFactory 布丁奶茶工厂
+type PuddingMilkTeaFactory struct{}
 
-func NewCoCoFactory() *CoCoFactory {
-	return &CoCoFactory{}
+func NewPuddingMilkTeaFactory() *PuddingMilkTeaFactory {
+	return &PuddingMilkTeaFactory{}
 }
 
-func (*CoCoFactory) Produce() MilkTea {
-	return &CoCoMilkTea{}
+func (*PuddingMilkTeaFactory) Produce() MilkTea {
+	return &PuddingMilkTea{}
 }

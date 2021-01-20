@@ -7,16 +7,16 @@ type MilkTea interface {
 	Drink()
 }
 
-// YiDianDianMilkTea 一点点奶茶
-type YiDianDianMilkTea struct{}
+// DiamondMilkTea 珍珠奶茶
+type DiamondMilkTea struct{}
 
-func (*YiDianDianMilkTea) Drink() {
-	fmt.Println("喝一点点奶茶...")
+func (*DiamondMilkTea) Drink() {
+	fmt.Println("喝珍珠奶茶...")
 }
 
-// CoCoMilkTea CoCo奶茶
-type CoCoMilkTea struct{}
+// PuddingMilkTea CoCo奶茶
+type PuddingMilkTea struct{}
 
-func (*CoCoMilkTea) Drink() {
-	fmt.Println("喝CoCo奶茶...")
+func (*PuddingMilkTea) Drink() {
+	fmt.Println("喝布丁奶茶...")
 }

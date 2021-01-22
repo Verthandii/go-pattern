@@ -1,36 +1,36 @@
 package main
 
-// MilkTeaShopFactory 奶茶店产品族的抽象工厂
-type MilkTeaShopFactory interface {
+// Shop 产品族的抽象工厂
+type Shop interface {
 	ProduceMilkTea() MilkTea
 	ProduceIceCream() IceCream
 }
 
-// YiDianDianFactory 一点点奶茶店
-type YiDianDianFactory struct{}
+// YiDianDianShop 一点点 产品族
+type YiDianDianShop struct{}
 
-func NewYiDianDianFactory() *YiDianDianFactory {
-	return &YiDianDianFactory{}
+func NewYiDianDianShop() *YiDianDianShop {
+	return &YiDianDianShop{}
 }
 
-func (*YiDianDianFactory) ProduceMilkTea() MilkTea {
+func (*YiDianDianShop) ProduceMilkTea() MilkTea {
 	return &YiDianDianMilkTea{}
 }
-func (*YiDianDianFactory) ProduceIceCream() IceCream {
+func (*YiDianDianShop) ProduceIceCream() IceCream {
 	return &YiDianDianIceCream{}
 }
 
-// CoCoFactory CoCo奶茶店
-type CoCoFactory struct{}
+// CoCoShop CoCo 产品族
+type CoCoShop struct{}
 
-func NewCoCoFactory() *CoCoFactory {
-	return &CoCoFactory{}
+func NewCoCoShop() *CoCoShop {
+	return &CoCoShop{}
 }
 
-func (*CoCoFactory) ProduceMilkTea() MilkTea {
+func (*CoCoShop) ProduceMilkTea() MilkTea {
 	return &CoCoMilkTea{}
 }
 
-func (*CoCoFactory) ProduceIceCream() IceCream {
+func (*CoCoShop) ProduceIceCream() IceCream {
 	return &CoCoIceCream{}
 }

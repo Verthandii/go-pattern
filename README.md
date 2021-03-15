@@ -11,23 +11,23 @@
 
 | Pattern | Status |
 |:-------:|:------:|
-| [Factory Method](/01_factory_method/README.md) |  ✔ |
-| [Abstract Factory](/02_abstract_factory/README.md) | ✔ |
-| [Builder](/03_builder_pattern/README.md) | ✔ |
-| [Prototype](/04_prototype_pattern/README.md) | ✔ |
-| [Singleton](/05_singleton_pattern/README.md) | ✔ |
+| [Factory Method](/01_factory_method) |  ✔ |
+| [Abstract Factory](/02_abstract_factory) | ✔ |
+| [Builder](/03_builder_pattern) | ✔ |
+| [Prototype](/04_prototype_pattern) | ✔ |
+| [Singleton](/05_singleton_pattern) | ✔ |
 
 ## Structural Patterns
 
 | Pattern | Status |
 |:-------:|:------:|
-| [Facade](/06_facade_pattern/README.md) | ✔ |
-| [Adapter](/07_adapter_pattern/README.md) | ✔ |
-| [Proxy](/08_proxy_pattern/README.md) | ✔ |
-| [Composite](/09_composite_pattern/README.md) | ✔ |
-| [Flyweight](/10_flyweight_pattern/README.md) | ✔ |
-| [Decorator](/11_decorator_pattern/README.md) | ✔ |
-| [Bridge](/12_bridge_pattern/README.md) | ✔ |
+| [Facade](/06_facade_pattern) | ✔ |
+| [Adapter](/07_adapter_pattern) | ✔ |
+| [Proxy](/08_proxy_pattern) | ✔ |
+| [Composite](/09_composite_pattern) | ✔ |
+| [Flyweight](/10_flyweight_pattern) | ✔ |
+| [Decorator](/11_decorator_pattern) | ✔ |
+| [Bridge](/12_bridge_pattern) | ✔ |
 
 ## Behavioral Patterns
 

@@ -37,9 +37,10 @@
 | Observer |  ✘ |
 | Command | ✘ |
 | Iterator | ✘ |
-| Template | ✘ |
+| Template Method | ✘ |
 | Strategy | ✘ |
 | State | ✘ |
+| Interpreter | ✘ |
 | Memento | ✘ |
 | Chain of Responsibility | ✘ |
 | Visitor | ✘ |
